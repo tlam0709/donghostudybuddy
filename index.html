@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Bấm Giờ và Hẹn Giờ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Đồng Hồ Bấm Giờ và Hẹn Giờ</h1>
+
+        <!-- Đồng hồ bấm giờ -->
+        <div id="clock" class="clock">00:00:00</div>
+        <div>
+            <button id="startStopButton" onclick="toggleClock()">Bắt đầu</button>
+            <button id="resetButton" onclick="resetClock()">Reset</button>
+        </div>
+
+        <hr>
+
+        <!-- Cài đặt thời gian cho đếm ngược -->
+        <div>
+            <input type="number" id="inputHours" placeholder="Giờ" min="0">
+            <input type="number" id="inputMinutes" placeholder="Phút" min="0" max="59">
+            <input type="number" id="inputSeconds" placeholder="Giây" min="0" max="59">
+            <button id="setTimeButton" onclick="setCountdown()">Cài đặt thời gian</button>
+        </div>
+
+        <div>
+            <button id="startCountdownButton" onclick="startCountdown()">Bắt đầu đếm ngược</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
